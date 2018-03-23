@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Music Player Project</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="an_image_of_the_artist">An image of the artist</string>
+    <string name="album_cover_art">album cover art</string>
+    <string name="a_picture_of_the_artist">a picture of the artist</string>
+    <string name="decorative_graphic">decorative graphic</string>
+    <string name="a_microphone_icon">a microphone icon</string>
+    <string name="an_icon_to_indicate_songs">an icon to indicate songs</string>
+    <string name="an_icon_to_indicate_albums">an icon to indicate albums</string>
+    <string name="a_category_label_either_song_artist_or_album">a category label, either song, artist or album</string>
+    <string name="play">play</string>
+    <string name="now">now</string>
+    <string name="a_play_button">a play button</string>
+    <string name="forwards_button">forwards button</string>
+    <string name="backwards_button">backwards button</string>
+    <string name="album_cover_artwork">album cover artwork</string>
+    <string name="yellow_house">Yellow House</string>
+</resources>

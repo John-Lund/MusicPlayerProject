@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundPurple"
+    tools:context="com.example.android.musicplayerproject.AlbumActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/artist_name_album_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="6dp"
+            android:textAllCaps="true"
+            android:textColor="@color/blueText"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="The Open Doors" />
+
+        <TextView
+            android:id="@+id/album_name_album_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/underSmallTexts"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center"
+            android:paddingBottom="13dp"
+            android:paddingTop="9dp"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteText"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/artist_name_album_activity"
+            tools:text="The Open Doors" />
+
+        <ImageView
+            android:contentDescription="@string/album_cover_art"
+            android:id="@+id/album_cover_image"
+            android:layout_width="0dp"
+            android:layout_height="294dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/album_name_album_activity"
+            app:srcCompat="@drawable/abundant_mamas_secret" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.91" />
+
+        <LinearLayout
+            android:id="@+id/song_list_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/album_cover_image">
+
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

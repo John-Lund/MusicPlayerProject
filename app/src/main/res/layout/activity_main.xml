@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPurple"
+    tools:context="com.example.android.musicplayerproject.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/song_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/menu_icon_padding"
+            android:layout_marginTop="@dimen/menu_icon_padding"
+            android:layout_weight="1"
+            android:contentDescription="@string/an_icon_to_indicate_songs"
+            app:srcCompat="@drawable/musicappicon_notes_blue" />
+
+        <ImageView
+            android:id="@+id/artist_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/menu_icon_padding"
+            android:layout_marginTop="@dimen/menu_icon_padding"
+            android:layout_weight="1"
+            android:contentDescription="@string/a_microphone_icon"
+            app:srcCompat="@drawable/musicappicon_mic_blue" />
+
+        <ImageView
+            android:id="@+id/album_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/menu_icon_padding"
+            android:layout_marginTop="@dimen/menu_icon_padding"
+            android:layout_weight="1"
+            android:contentDescription="@string/an_icon_to_indicate_albums"
+            app:srcCompat="@drawable/musicappicon_album_blue" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/category_textview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/a_category_label_either_song_artist_or_album"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/musicappartists_menu" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <GridView
+        android:id="@+id/artists_gridview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="135dp"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/albums_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="135dp"
+        android:dividerHeight="10.0sp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/songs_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="135dp"
+        android:dividerHeight="10.0sp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/grid_item_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:contentDescription="@string/an_image_of_the_artist"
+        android:id="@+id/grid_image"
+        android:layout_width="@dimen/grid_item_width"
+        android:layout_height="@dimen/grid_item_width"
+        android:src="@drawable/abundant_mamas_secret" />
+
+    <TextView
+        android:id="@+id/details_textview_1"
+        android:layout_width="@dimen/grid_item_width"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:textAllCaps="true"
+        android:textColor="@color/whiteText" />
+
+    <TextView
+        android:id="@+id/details_textview_2"
+        android:layout_width="@dimen/grid_item_width"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="@color/blueText"
+        android:textSize="10sp" />
+
+</LinearLayout>

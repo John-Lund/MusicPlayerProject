@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:contentDescription="@string/a_play_button"
+        android:id="@+id/play_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="15dp"
+        android:src="@drawable/musicappicon_play_darkercircle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingStart="@dimen/album_text_padding"
+            android:paddingEnd="0dp"
+            android:textColor="@color/whiteText"
+            android:textSize="16sp"
+            tools:text="Mary Mary" />
+
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="bottom"
+            android:paddingStart="@dimen/album_text_padding"
+            android:paddingEnd="0dp"
+            android:textAllCaps="true"
+            android:textColor="@color/blueTextLighter"
+            android:textSize="12sp"
+            tools:text="Mary Mary" />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="top|center_vertical"
+            android:paddingStart="@dimen/album_text_padding"
+            android:paddingEnd="0dp"
+            android:textAllCaps="true"
+            android:textColor="@color/blueText"
+            android:textSize="10sp"
+            tools:text="Mary Mary" />
+    </LinearLayout>
+
+
+</LinearLayout>
