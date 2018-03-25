@@ -48,6 +48,15 @@ public class PlayActivity extends AppCompatActivity {
         // setting play state to false
         playIsOn = false;
 
+        // setting up the back button
+        ImageView back = findViewById(R.id.play_back_button);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         //// intergating received intents and linking to appropriate methods
         if (receivedIntent.getStringExtra("object class").equals("Song")) {
             displaySong();
@@ -149,6 +158,14 @@ public class PlayActivity extends AppCompatActivity {
         songs = album.getAlbumSongs();
         songPlaying = songs.indexOf(song);
     }
+
+    public void close(View v){
+
+    finish();
+
+    }
+
+
 }
 
 

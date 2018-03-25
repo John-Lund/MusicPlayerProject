@@ -13,10 +13,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/artist_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/back_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/musicapp_icon_back_blue" />
+
+        </android.support.constraint.ConstraintLayout>
+
         <TextView
             android:id="@+id/artist_name_artist_activity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
             android:background="@color/colorPrimary"
             android:fontFamily="@font/lato_bold"
             android:gravity="center"
@@ -36,7 +58,7 @@
             android:layout_height="200dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="116dp"
+            android:layout_marginTop="172dp"
             android:contentDescription="@string/a_picture_of_the_artist"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

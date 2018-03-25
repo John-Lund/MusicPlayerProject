@@ -30,6 +30,14 @@ public class ArtistAcitvity extends AppCompatActivity {
         // setting correct artist detail in the layout
         artistName.setText(artist.getArtistName());
         artistImage.setImageResource(artist.getImageId());
+        // setting up the back button
+        ImageView back = findViewById(R.id.artist_back_button);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         // creating two listeners: one for the play icon and one for the album image with intents for
         // relevant activities

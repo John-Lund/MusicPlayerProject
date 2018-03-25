@@ -31,6 +31,15 @@ public class AlbumActivity extends AppCompatActivity {
         albumName.setText(album.getTitle());
         albumCover.setImageResource(album.getImageId());
 
+        // setting up the back button
+        ImageView back = findViewById(R.id.album_back_button);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         // setting up list of song items, adding a listener to each item and inserting all items into the layout with a for loop
         ViewGroup songLayout = findViewById(R.id.song_list_linear_layout);
         View.OnClickListener albumListener = new View.OnClickListener() {
